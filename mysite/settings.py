@@ -83,6 +83,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
+
 # For Heroku
 import dj_database_url
 DATABASES['default'] =  dj_database_url.config()
